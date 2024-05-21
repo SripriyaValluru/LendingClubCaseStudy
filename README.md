@@ -1,4 +1,4 @@
-# Lending Club Case Study - By Sri Priya Valluru and Priya Sharma
+# Lending Club Case Study 
 > Lending Club offers loans to borrowers, but many borrowers default, meaning they don't repay the borrowed amount and the interest.These defaults cause financial losses for businesses or lenders.Therefore, the goal of this case study is to identify key factors that can help predict which borrowers are more likely to default. 
 
 ## Table of Contents
@@ -47,26 +47,17 @@ Used Python 3 and its respective libraries:
 - The charged offs are high in state California.
 
 #### Multivariate Analysis Summary
-###### Positive Correlations
-- loan_amnt and funded_amnt (0.98):
+##### Positive Correlations
+- loan_amnt and funded_amnt (0.98): These variables are highly correlated, indicating that the amount of the loan is almost equal to the amount funded.
 
-These variables are highly correlated, indicating that the amount of the loan is almost equal to the amount funded.
+- funded_amnt and funded_amnt_inv (1.00): This perfect correlation suggests that the funded amount is equal to the funded amount invested, likely because these values are essentially the same in different contexts.
 
-- funded_amnt and funded_amnt_inv (1.00):
+- loan_amnt and funded_amnt_inv (0.96): This strong correlation is similar to the one above, reinforcing the relationship between loan amount and funded investment.
 
-This perfect correlation suggests that the funded amount is equal to the funded amount invested, likely because these values are essentially the same in different contexts.
+- loan_amnt and installment (0.93): The loan amount is strongly related to the installment amount, which makes sense as larger loans generally require larger installments.
 
-- loan_amnt and funded_amnt_inv (0.96):
-
-This strong correlation is similar to the one above, reinforcing the relationship between loan amount and funded investment.
-
-- loan_amnt and installment (0.93):
-
-The loan amount is strongly related to the installment amount, which makes sense as larger loans generally require larger installments.
-
-###### Negative Correlation
-- annual_inc and dti (-0.12):
-This is a weak correlation and it suggests that as annual income increases, the DTI tends to decrease slightly, but the relationship is not strong.
+##### Negative Correlation
+- annual_inc and dti (-0.12): This is a weak correlation and it suggests that as annual income increases, the DTI tends to decrease slightly, but the relationship is not strong.
 
 
 ## Acknowledgements
@@ -78,8 +69,6 @@ This is a weak correlation and it suggests that as annual income increases, the 
 Created by
 - Sri Priya Valluru (https://github.com/SripriyaValluru)
 - Priya Sharma (https://github.com/priyalotusfeet108)
-feel free to contact us!
-
 
 <!-- Optional -->
 <!-- ## License -->
